@@ -74,6 +74,7 @@
     @apply bg-background text-foreground;
   }
   html {
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-family: "Roboto", sans-serif;
   }
 }

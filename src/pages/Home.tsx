@@ -1,8 +1,11 @@
+import Container from "@/components/ui/Container";
+import HeroSection from "./LandingPageSection/HeroSection";
+
 const Home = () => {
   return (
-    <div>
-      <h1>this is home page</h1>
-    </div>
+    <Container>
+      <HeroSection />
+    </Container>
   );
 };
 
