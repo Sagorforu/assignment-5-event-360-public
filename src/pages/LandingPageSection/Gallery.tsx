@@ -1,4 +1,16 @@
 import Container from "@/components/ui/Container";
+import picture1 from "../../assets/gallery/picture1.png";
+import Picture2 from "../../assets/gallery/Picture2.png";
+import Picture3 from "../../assets/gallery/Picture3.png";
+import Picture4 from "../../assets/gallery/Picture4.png";
+import Picture5 from "../../assets/gallery/Picture5.png";
+import Picture6 from "../../assets/gallery/Picture6.png";
+import Picture7 from "../../assets/gallery/Picture7.png";
+import Picture8 from "../../assets/gallery/Picture8.png";
+import Picture9 from "../../assets/gallery/Picture9.png";
+import Picture10 from "../../assets/gallery/Picture10.png";
+import Picture11 from "../../assets/gallery/Picture11.png";
+import Picture12 from "../../assets/gallery/Picture12.png";
 
 const Gallery = () => {
   return (
@@ -13,6 +25,34 @@ const Gallery = () => {
           posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
           ornare viverra. Ultrices faucibus neque velit risus ac id lorem.
         </p>
+      </div>
+      <div className="mt-20 grid grid-cols-4 md:grid-cols-5 lg:grid-cols-7 lg:justify-items-center lg:items-center gap-4 lg:px-24 px-5">
+        <div>
+          <img src={picture1} alt="" />
+          <img src={Picture2} alt="" />
+        </div>
+        <div>
+          <img src={Picture3} alt="" />
+        </div>
+        <div>
+          <img src={Picture4} alt="" />
+          <img src={Picture5} alt="" />
+        </div>
+        <div>
+          <img src={Picture6} alt="" />
+          <img src={Picture7} alt="" />
+        </div>
+        <div>
+          <img src={Picture8} alt="" />
+          <img src={Picture9} alt="" />
+        </div>
+        <div>
+          <img src={Picture10} alt="" />
+        </div>
+        <div>
+          <img src={Picture11} alt="" />
+          <img src={Picture12} alt="" />
+        </div>
       </div>
     </Container>
   );
