@@ -1,3 +1,4 @@
+import Customers from "./LandingPageSection/Customers";
 import EventItems from "./LandingPageSection/EventItems";
 import Gallery from "./LandingPageSection/Gallery";
 import HeroSection from "./LandingPageSection/HeroSection";
@@ -16,6 +17,7 @@ const Home = () => {
       <Gallery />
       <RecentEvents />
       <UpComingEvents />
+      <Customers />
     </div>
   );
 };
