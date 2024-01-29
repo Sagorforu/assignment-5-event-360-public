@@ -3,7 +3,7 @@ import play from "../../assets/Play.svg";
 
 const HeroSection = () => {
   return (
-    <div className="pt-32 mx-auto lg:px-[310px]">
+    <div className="pt-32 mx-auto bg-[#F5F6F7] lg:px-[310px]">
       <div>
         <div className="lg:flex lg:gap-[128px] text-[#061C3D] items-center justify-between">
           <h1 className="text-3xl lg:text-[64px] mb-4 lg:mb-0 font-extrabold uppercase lg:leading-[70px]">
