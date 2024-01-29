@@ -4,6 +4,7 @@ import HeroSection from "./LandingPageSection/HeroSection";
 import OurServices from "./LandingPageSection/OurServices";
 import PricingPlan from "./LandingPageSection/PricingPlan";
 import RecentEvents from "./LandingPageSection/RecentEvents";
+import UpComingEvents from "./LandingPageSection/UpComingEvents";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <PricingPlan />
       <Gallery />
       <RecentEvents />
+      <UpComingEvents />
     </div>
   );
 };

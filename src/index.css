@@ -83,3 +83,7 @@
   background: rgba(23.46, 21.75, 17.34, 0.85);
   border: 1px solid var(--Blue-Gray-700, #334155);
 }
+.upComing-box-background {
+  border-radius: 16px;
+  background: var(--Secondary-50, #fff9ee);
+}
