@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="footer-container lg:px-[310px] px-2">
+    <div className="footer-container lg:px-[310px] px-4">
       <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-12 py-12">
         <div>
           {" "}
@@ -109,7 +109,7 @@ const Footer = () => {
           @ {currentYear}. All rights reserved.
         </div>
         <div>
-          <div className="lg:space-x-8 lg:flex items-center">
+          <div className="space-x-8 flex items-center">
             <div>
               <a className="text-white text-xs" href="">
                 Term
@@ -135,7 +135,7 @@ const Footer = () => {
                 <Euro className="h-5" /> <span>EUR</span>
               </div>
             </a>
-            <img src={accessibility} alt="" className="h-5 mt-2 lg:mt-0" />
+            <img src={accessibility} alt="" className="h-5 lg:mt-0" />
           </div>
         </div>
       </div>
