@@ -73,6 +73,7 @@ module.exports = {
       },
       fontFamily: {
         "plus-jakarta-sans": ['"Plus Jakarta Sans"', "sans-serif"],
+        inter: ['"Inter"', "sans-serif"],
       },
     },
   },
