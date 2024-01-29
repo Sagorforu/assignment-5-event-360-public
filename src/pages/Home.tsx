@@ -3,9 +3,9 @@ import HeroSection from "./LandingPageSection/HeroSection";
 
 const Home = () => {
   return (
-    <Container>
+    <div className="bg-[#F5F6F7]">
       <HeroSection />
-    </Container>
+    </div>
   );
 };
 
