@@ -3,6 +3,7 @@ import ClientReviews from "./LandingPageSection/ClientReviews";
 import Customers from "./LandingPageSection/Customers";
 import EventItems from "./LandingPageSection/EventItems";
 import Gallery from "./LandingPageSection/Gallery";
+import GetSupport from "./LandingPageSection/GetSupport";
 import HeroSection from "./LandingPageSection/HeroSection";
 import OurServices from "./LandingPageSection/OurServices";
 import PricingPlan from "./LandingPageSection/PricingPlan";
@@ -22,6 +23,7 @@ const Home = () => {
       <Customers />
       <ClientReviews />
       <AboutMyCompany />
+      <GetSupport />
     </div>
   );
 };

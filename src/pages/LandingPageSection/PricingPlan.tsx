@@ -27,7 +27,7 @@ const PricingPlan = () => {
                 $10
               </h1>
             </div>
-            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[15px]  font-inter">
+            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter">
               Get this package
             </button>
             <p className="text-[#566B84] text-[12px] font-normal tracking-wider text-center  font-inter">
@@ -122,7 +122,7 @@ const PricingPlan = () => {
                 $15
               </h1>
             </div>
-            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[15px]  font-inter">
+            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter">
               Get this package
             </button>
             <p className="text-[#566B84] text-[12px] font-normal tracking-wider text-center  font-inter">
@@ -222,7 +222,7 @@ const PricingPlan = () => {
                 $35
               </h1>
             </div>
-            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[15px]  font-inter">
+            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter">
               Get this package
             </button>
             <p className="text-[#566B84] text-[12px] font-normal tracking-wider text-center  font-inter">
@@ -317,7 +317,7 @@ const PricingPlan = () => {
                 $15
               </h1>
             </div>
-            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[15px]  font-inter">
+            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter">
               Get this package
             </button>
             <p className="text-[#566B84] text-[12px] font-normal tracking-wider text-center  font-inter">
