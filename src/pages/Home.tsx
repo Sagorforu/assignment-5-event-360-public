@@ -1,3 +1,4 @@
+import AboutMyCompany from "./LandingPageSection/AboutMyCompany";
 import ClientReviews from "./LandingPageSection/ClientReviews";
 import Customers from "./LandingPageSection/Customers";
 import EventItems from "./LandingPageSection/EventItems";
@@ -20,6 +21,7 @@ const Home = () => {
       <UpComingEvents />
       <Customers />
       <ClientReviews />
+      <AboutMyCompany />
     </div>
   );
 };
