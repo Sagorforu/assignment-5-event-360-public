@@ -1,6 +1,7 @@
 import Container from "@/components/ui/Container";
 import vector from "../../assets/Vector.svg";
 import cross from "../../assets/cross.svg";
+import { motion } from "framer-motion";
 
 const PricingPlan = () => {
   return (
@@ -17,7 +18,10 @@ const PricingPlan = () => {
         </p>
       </div>
       <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-[25px]">
-        <div className="border pt-12 px-[33px] pb-[33px] rounded-lg shadow-xl">
+        <motion.div
+          whileHover={{ y: -5 }}
+          className="border pt-12 px-[33px] pb-[33px] rounded-lg shadow-xl"
+        >
           <div className=" space-y-6">
             <div className="text-center">
               <h1 className="text-xl font-bold tracking-wider  font-inter">
@@ -27,9 +31,12 @@ const PricingPlan = () => {
                 $10
               </h1>
             </div>
-            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter"
+            >
               Get this package
-            </button>
+            </motion.button>
             <p className="text-[#566B84] text-[12px] font-normal tracking-wider text-center  font-inter">
               Ut posuere felis arcu tellus tempus in in ultricies. Gravida.
             </p>
@@ -111,8 +118,11 @@ const PricingPlan = () => {
               </div>
             </ul>
           </div>
-        </div>
-        <div className="border pt-12 px-[33px] pb-[33px]  rounded-lg shadow-xl">
+        </motion.div>
+        <motion.div
+          whileHover={{ y: -5 }}
+          className="border pt-12 px-[33px] pb-[33px]  rounded-lg shadow-xl"
+        >
           <div className=" space-y-6">
             <div className="text-center">
               <h1 className="text-xl font-bold tracking-wider  font-inter">
@@ -122,9 +132,12 @@ const PricingPlan = () => {
                 $15
               </h1>
             </div>
-            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter"
+            >
               Get this package
-            </button>
+            </motion.button>
             <p className="text-[#566B84] text-[12px] font-normal tracking-wider text-center  font-inter">
               Ut posuere felis arcu tellus tempus in in ultricies. Gravida.
             </p>
@@ -206,8 +219,11 @@ const PricingPlan = () => {
               </div>
             </ul>
           </div>
-        </div>
-        <div className="border  pb-[33px]  rounded-lg shadow-xl">
+        </motion.div>
+        <motion.div
+          whileHover={{ y: -5 }}
+          className="border  pb-[33px]  rounded-lg shadow-xl"
+        >
           <div className="bg-[#0B63E5]  rounded-t-lg">
             <p className="text-center py-2 text-white font-inter text-[10px] font-medium leading-3 tracking-wider">
               Popular Plan
@@ -222,9 +238,12 @@ const PricingPlan = () => {
                 $35
               </h1>
             </div>
-            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter"
+            >
               Get this package
-            </button>
+            </motion.button>
             <p className="text-[#566B84] text-[12px] font-normal tracking-wider text-center  font-inter">
               Ut posuere felis arcu tellus tempus in in ultricies. Gravida.
             </p>
@@ -306,8 +325,11 @@ const PricingPlan = () => {
               </div>
             </ul>
           </div>
-        </div>
-        <div className="border pt-12 px-[33px] pb-[33px]  rounded-lg shadow-xl">
+        </motion.div>
+        <motion.div
+          whileHover={{ y: -5 }}
+          className="border pt-12 px-[33px] pb-[33px]  rounded-lg shadow-xl"
+        >
           <div className=" space-y-6">
             <div className="text-center">
               <h1 className="text-xl font-bold tracking-wider  font-inter">
@@ -317,9 +339,12 @@ const PricingPlan = () => {
                 $15
               </h1>
             </div>
-            <button className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              className="w-full mx-auto font-semibold bg-[#0B63E5] py-2 rounded-md text-white tracking-widest text-[12px] lg:text-[15px]  font-inter"
+            >
               Get this package
-            </button>
+            </motion.button>
             <p className="text-[#566B84] text-[12px] font-normal tracking-wider text-center  font-inter">
               Ut posuere felis arcu tellus tempus in in ultricies. Gravida.
             </p>
@@ -401,7 +426,7 @@ const PricingPlan = () => {
               </div>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Container>
   );

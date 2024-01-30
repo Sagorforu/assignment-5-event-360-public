@@ -2,11 +2,19 @@ import Container from "@/components/ui/Container";
 import Person from "../../assets/upComingEvents/Photo.png";
 import Cpu from "../../assets/upComingEvents/Cpu.svg";
 import Stack from "../../assets/upComingEvents/Stack.svg";
+import { motion } from "framer-motion";
+import { animationLeftDiv } from "@/hooks/useLeftDivAnimation";
+import { animationRightDiv } from "@/hooks/useRightDivAnimation";
 
 const UpComingEvents = () => {
   return (
     <Container className="mt-28 py-11 grid lg:grid-cols-2 items-center gap-16 lg:gap-24">
-      <div>
+      <motion.div
+        variants={animationLeftDiv}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <h1 className="text-[#061C3D] text-5xl font-extrabold mb-6">
           Upcoming Events
         </h1>
@@ -47,10 +55,15 @@ const UpComingEvents = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        variants={animationRightDiv}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <img src={Person} alt="" />
-      </div>
+      </motion.div>
     </Container>
   );
 };

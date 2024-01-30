@@ -11,11 +11,14 @@ import Picture9 from "../../assets/gallery/Picture9.png";
 import Picture10 from "../../assets/gallery/Picture10.png";
 import Picture11 from "../../assets/gallery/Picture11.png";
 import Picture12 from "../../assets/gallery/Picture12.png";
+import { motion } from "framer-motion";
+import useScrollGrowUp from "@/hooks/useScrollGrowUp";
 
 const Gallery = () => {
+  const { style, ref } = useScrollGrowUp();
   return (
     <Container className="mt-10 lg:mt-[76px]">
-      <div className="">
+      <motion.div style={style} ref={ref} className="">
         <h1 className="text-[#061C3D] text-5xl font-extrabold text-center leading-[53px]">
           Gallery
         </h1>
@@ -25,33 +28,33 @@ const Gallery = () => {
           posuere felis arcu tellus tempus in in ultricies. Gravida id nibh
           ornare viverra. Ultrices faucibus neque velit risus ac id lorem.
         </p>
-      </div>
+      </motion.div>
       <div className="mt-20 grid grid-cols-4 md:grid-cols-5 lg:grid-cols-7 lg:justify-items-center lg:items-center gap-4 lg:px-24 px-5">
         <div>
-          <img src={picture1} alt="" />
-          <img src={Picture2} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={picture1} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture2} alt="" />
         </div>
         <div>
-          <img src={Picture3} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture3} alt="" />
         </div>
         <div>
-          <img src={Picture4} alt="" />
-          <img src={Picture5} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture4} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture5} alt="" />
         </div>
         <div>
-          <img src={Picture6} alt="" />
-          <img src={Picture7} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture6} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture7} alt="" />
         </div>
         <div>
-          <img src={Picture8} alt="" />
-          <img src={Picture9} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture8} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture9} alt="" />
         </div>
         <div>
-          <img src={Picture10} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture10} alt="" />
         </div>
         <div>
-          <img src={Picture11} alt="" />
-          <img src={Picture12} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture11} alt="" />
+          <motion.img whileHover={{ scale: 1.05 }} src={Picture12} alt="" />
         </div>
       </div>
     </Container>

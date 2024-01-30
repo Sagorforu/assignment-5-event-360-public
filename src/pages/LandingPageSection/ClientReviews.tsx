@@ -4,6 +4,7 @@ import owner from "../../assets/reviews/Invisible.png";
 import netflix from "../../assets/reviews/netflix.svg";
 import google from "../../assets/reviews/google.svg";
 import youtube from "../../assets/reviews/youtube.svg";
+import { motion } from "framer-motion";
 
 const ClientReviews = () => {
   return (
@@ -26,7 +27,10 @@ const ClientReviews = () => {
         </div>
       </div>
       <div className="mt-[70px] grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="p-10 bg-[#FFF9EE] rounded-3xl">
+        <motion.div
+          whileHover={{ scale: 1.03 }}
+          className="p-10 bg-[#FFF9EE] rounded-3xl"
+        >
           <div className="flex items-center gap-3">
             <img src={owner} alt="" />
             <div>
@@ -46,8 +50,11 @@ const ClientReviews = () => {
             ethic, and attention to detail. ”
           </p>
           <img className="mt-10" src={netflix} alt="" />
-        </div>
-        <div className="p-10 bg-[#E7F5E8] rounded-3xl">
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.03 }}
+          className="p-10 bg-[#E7F5E8] rounded-3xl"
+        >
           <div className="flex items-center gap-3">
             <img src={owner} alt="" />
             <div>
@@ -67,8 +74,11 @@ const ClientReviews = () => {
             ethic, and attention to detail. ”
           </p>
           <img className="mt-10" src={google} alt="" />
-        </div>
-        <div className="p-10 bg-[#F5F6F7] rounded-3xl">
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.03 }}
+          className="p-10 bg-[#F5F6F7] rounded-3xl"
+        >
           <div className="flex items-center gap-3">
             <img src={owner} alt="" />
             <div>
@@ -88,7 +98,7 @@ const ClientReviews = () => {
             ethic, and attention to detail. ”
           </p>
           <img className="mt-10" src={youtube} alt="" />
-        </div>
+        </motion.div>
       </div>
     </Container>
   );
