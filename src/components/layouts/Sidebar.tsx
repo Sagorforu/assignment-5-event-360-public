@@ -64,6 +64,19 @@ const Sidebar = () => {
         >
           All-Recent-Events
         </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            cn(
+              "bg-[#3460ffb6] hover:bg-[#3461FF] py-1 px-2 tracking-wider text-base font-medium hover:text-white truncate",
+              {
+                "text-white bg-[#3461FF]": isActive,
+              }
+            )
+          }
+          to="/"
+        >
+          Home
+        </NavLink>
       </nav>
     </div>
   );
