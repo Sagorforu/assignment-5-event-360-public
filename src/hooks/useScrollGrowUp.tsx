@@ -8,8 +8,8 @@ const useScrollGrowUp = () => {
     offset: ["0 1", "3 1"],
   });
 
-  const scaleValues = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
-  const opacityValues = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
+  const scaleValues = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+  const opacityValues = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   const style = {
     scale: scaleValues,

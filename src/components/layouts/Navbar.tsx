@@ -52,11 +52,19 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/admin"
+                  className="block py-2 px-4 text-[#000] hover:bg-[#F0F5FF]"
+                  onClick={toggleMenu}
+                >
+                  Dashboard
+                </NavLink>
+              </li>
             </ul>
           )}
         </div>
-
-        {/* For large screens: */}
+        {/* for large device */}
         <ul className="hidden lg:flex space-x-8">
           <NavLink to="/" className="text-base font-medium text-[#000]">
             Home
@@ -66,6 +74,9 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/contact" className="text-base font-medium text-[#000]">
             Contact
+          </NavLink>
+          <NavLink to="/admin" className="text-base font-medium text-[#000]">
+            Dashboard
           </NavLink>
         </ul>
       </nav>

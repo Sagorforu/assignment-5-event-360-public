@@ -11,11 +11,20 @@ const heroSection = {
   },
 };
 const heroSectionImage = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 1, ease: "easeInOut" },
+  initial: { y: 0, rotate: -90, scale: 5 },
+  animate: {
+    y: -20,
+    rotate: 0,
+    scale: 1,
+    transition: {
+      duration: 1,
+      y: {
+        repeat: Infinity,
+        duration: 2,
+        repeatType: "reverse",
+        ease: "easeInOut",
+      },
+    },
   },
 };
 
@@ -48,8 +57,8 @@ const HeroSection = () => {
       </motion.div>
       <motion.div
         variants={heroSectionImage}
-        initial="hidden"
-        animate="visible"
+        initial="initial"
+        animate="animate"
         className="relative"
       >
         <div className="mt-12 md:h-[600px] bg-red-400 md:relative">
