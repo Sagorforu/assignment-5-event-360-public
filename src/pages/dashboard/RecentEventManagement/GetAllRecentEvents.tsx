@@ -1,7 +1,9 @@
+import RecentEvents from "@/pages/LandingPageSection/RecentEvents";
+
 const GetAllRecentEvents = () => {
   return (
     <div>
-      <h1>this is getAllRecentEvents page</h1>
+      <RecentEvents />
     </div>
   );
 };
