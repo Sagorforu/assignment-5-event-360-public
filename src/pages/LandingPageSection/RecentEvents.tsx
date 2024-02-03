@@ -6,7 +6,13 @@ import { useQuery } from "@tanstack/react-query";
 import { motion } from "framer-motion";
 
 const RecentEvents = () => {
-  const { data, isLoading, isError } = useQuery({
+  const { data, isLoading, isError } = useQuery<
+    {
+      _id: string;
+      imageURL: string;
+      name: string;
+    }[]
+  >({
     queryKey: ["recentEvents"],
     queryFn: getRecentEvents,
   });
@@ -53,7 +59,7 @@ const RecentEvents = () => {
           <div className="text-center text-2xl">Loading...</div>
         ) : (
           <div className="grid grid-cols-3 gap-5 w-full h-full">
-            {data.map((event) => (
+            {data?.map((event) => (
               <div key={event._id}>
                 <img src={event.imageURL} alt="" />
               </div>
