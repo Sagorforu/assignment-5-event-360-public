@@ -10,13 +10,10 @@ import {
 } from "@/components/ui/table";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Pencil, Trash2 } from "lucide-react";
-import { useState } from "react";
-import UpdateModal from "./UpdateModal";
 import { ToastContainer, toast } from "react-toastify";
 
 const GetAllRecentEvents = () => {
   const queryClient = useQueryClient();
-  const [openModal, setOpenModal] = useState(false);
   const { data, isLoading, isError } = useQuery<
     {
       _id: string;
@@ -83,7 +80,7 @@ const GetAllRecentEvents = () => {
                 </TableCell>
                 <TableCell className="font-medium">{event.name}</TableCell>
                 <TableCell>
-                  <button onClick={() => setOpenModal(true)}>
+                  <button>
                     <Pencil className="bg-[#3461FF] text-white size-8 rounded-md p-1" />
                   </button>
                 </TableCell>
@@ -94,7 +91,6 @@ const GetAllRecentEvents = () => {
                 </TableCell>
               </TableRow>
             ))}
-            {openModal && <UpdateModal />}
           </TableBody>
         </Table>
       )}
