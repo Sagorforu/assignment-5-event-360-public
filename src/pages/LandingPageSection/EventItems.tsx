@@ -36,7 +36,7 @@ const EventItems = () => {
       {isLoading ? (
         <div className="text-2xl text-center mt-14">Loading...</div>
       ) : (
-        <div className="grid grid-cols-6 gap-2 lg:gap-5 mt-14">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 lg:gap-5 mt-14">
           {data?.map((event, index) => (
             <div
               key={event._id}
