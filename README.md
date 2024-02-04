@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# MindFull Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Link: https://assignment-5-event-360-public-w.vercel.app/
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- This is a animated website by framer motion. I used Backend and Front-end both.
+- This site main focused frontend animation and "CRUD" operations.
+- This Site has a Event items and recent events Based Dashboard. They have each functionality with "CRUD" based editable table and event and recent event page.
+- There is navbar and has page route and it also dashboard route.
+- One Header Section.
+- I have added few important section also. I have our service section it will fetched data from mongoDB using Tanstack query.
+- Footer section added.
 
-## Expanding the ESLint configuration
+### Used Tools, Packages and Technology
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- SoftWare: Windows 10, Vs Code
+- Tools: Shadcn, Vite, MongoDb
+- Technology: HTML5, CSS3, Tailwind CSS, React, Express.js, Node.js, TypeScript, Framer motion, tanstack query
+- Packages: react, lucid icons, react-router-dom, react-toastify, dotenv
