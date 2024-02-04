@@ -12,6 +12,8 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Pencil, Trash2 } from "lucide-react";
 import { ToastContainer, toast } from "react-toastify";
 
+type TEventId = string;
+
 const GetAllEvent = () => {
   const queryClient = useQueryClient();
   const { data, isLoading, isError } = useQuery<
@@ -34,10 +36,13 @@ const GetAllEvent = () => {
   }
 
   const { mutateAsync } = useMutation({
-    mutationFn: async (eventId) => {
-      const res = await fetch(`http://localhost:5000/event-item/${eventId}`, {
-        method: "DELETE",
-      });
+    mutationFn: async (eventId: TEventId) => {
+      const res = await fetch(
+        `https://event360-assignment-5.vercel.app/event-item/${eventId}`,
+        {
+          method: "DELETE",
+        }
+      );
       if (res.ok) {
         toast("Event Item Deleted Successfully");
       }
@@ -47,7 +52,7 @@ const GetAllEvent = () => {
       queryClient.invalidateQueries({ queryKey: ["eventItems"] });
     },
   });
-  const handleDelete = async (eventId) => {
+  const handleDelete = async (eventId: TEventId) => {
     try {
       await mutateAsync(eventId);
     } catch (error) {

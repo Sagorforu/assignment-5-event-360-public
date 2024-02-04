@@ -1,5 +1,5 @@
 export const getEventItems = async () => {
-  return await fetch("http://localhost:5000/event-items").then((res) =>
-    res.json()
-  );
+  return await fetch(
+    "https://event360-assignment-5.vercel.app/event-items"
+  ).then((res) => res.json());
 };

@@ -5,7 +5,7 @@ import Home from "@/pages/Home";
 import AdminLayout from "@/components/layouts/AdminLayout";
 import CreateEvent from "@/pages/dashboard/EventsManagement/CreateEvent";
 import GetAllEvent from "@/pages/dashboard/EventsManagement/GetAllEvent";
-import Dashboard from "@/pages/dashboard/dashboard";
+import Dashboard from "@/pages/dashboard/DashboardFile";
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import CreateRecentEvent from "@/pages/dashboard/RecentEventManagement/CreateRecentEvent";
 import GetAllRecentEvents from "@/pages/dashboard/RecentEventManagement/GetAllRecentEvents";

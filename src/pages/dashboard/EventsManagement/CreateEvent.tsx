@@ -4,20 +4,28 @@ import { FormEvent, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+type TEventItemData = {
+  eventName: string;
+  photoURL: string;
+};
+
 const CreateEvent = () => {
   const [eventItemName, setEventItemName] = useState("");
   const [eventItemImageLink, setEventItemImageLink] = useState("");
 
   const queryClient = useQueryClient();
   const { mutateAsync, isError, isPending, reset } = useMutation({
-    mutationFn: async (eventItemData) => {
-      const res = await fetch("http://localhost:5000/add-event-item", {
-        method: "POST",
-        body: JSON.stringify(eventItemData),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+    mutationFn: async (eventItemData: TEventItemData) => {
+      const res = await fetch(
+        "https://event360-assignment-5.vercel.app/add-event-item",
+        {
+          method: "POST",
+          body: JSON.stringify(eventItemData),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       if (res.ok) {
         toast("Event Item Added Successfully");
         reset();
