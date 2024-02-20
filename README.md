@@ -1,4 +1,4 @@
-# MindFull Heaven
+# Event360
 
 Live Link: https://assignment-5-event-360-public-w.vercel.app/
 
